@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev  --webpack",
     "build": "next build",
     "preview": "opennextjs-cloudflare build && wrangler dev",
     "deploy": "opennextjs-cloudflare build && wrangler deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "latest",
     "@react-three/drei": "latest",
     "@react-three/fiber": "latest",
     "framer-motion": "latest",
@@ -21,7 +20,6 @@
     "three": "latest"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
