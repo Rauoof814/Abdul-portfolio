@@ -1,0 +1,1 @@
+import {profile}from"@/data/profile";export function Footer(){return <footer className="border-t border-white/10 px-5 py-10 text-center text-sm text-slate-400">© {new Date().getFullYear()} {profile.name}. Built for {profile.domain}. <span className="text-slate-500">Fast, responsive, and project-ready.</span></footer>}
